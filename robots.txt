@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tieasychef.github.io/sitemap.xml

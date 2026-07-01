@@ -5,12 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Michel Schmidt — Desenvolvedor Sênior Salesforce & Integrações</title>
   <meta name="description" content="Michel Schmidt — Desenvolvedor sênior especialista em Salesforce, integrações e aplicativos. Mais de 20 anos ajudando empresas a alcançar seus objetivos com mais eficiência, menos tempo e menos custo. Itajaí, Santa Catarina." />
+  <meta name="keywords" content="Michel Schmidt, desenvolvedor Salesforce, consultor Salesforce, integração de sistemas, Apex, Lightning Web Components, LWC, MuleSoft, desenvolvimento de aplicativos, automação de processos, Itajaí Santa Catarina" />
   <meta name="author" content="Michel Schmidt" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#2f7d8f" />
+  <link rel="canonical" href="https://tieasychef.github.io/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%232f7d8f%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 font-family=%22sans-serif%22 font-weight=%22800%22 fill=%22%23fff%22 text-anchor=%22middle%22>M</text></svg>" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Michel Schmidt — Desenvolvedor Sênior Salesforce & Integrações" />
   <meta property="og:description" content="20+ anos em análise e desenvolvimento. Consultoria em Salesforce, integrações e aplicativos sob medida." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tieasychef.github.io/" />
+  <meta property="og:site_name" content="Michel Schmidt — Portfólio" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://tieasychef.github.io/assets/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Michel Schmidt — Desenvolvedor Sênior Salesforce & Integrações" />
+  <meta name="twitter:description" content="20+ anos em análise e desenvolvimento. Consultoria em Salesforce, integrações e aplicativos sob medida." />
+  <meta name="twitter:image" content="https://tieasychef.github.io/assets/og-cover.jpg" />
+
+  <!-- Dados estruturados (SEO / Rich Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michel Schmidt",
+    "jobTitle": "Desenvolvedor Sênior Salesforce & Integrações",
+    "url": "https://tieasychef.github.io/",
+    "email": "mailto:contato@michelschmidt.dev",
+    "telephone": "+5554991347184",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Hercílio Luz, 660",
+      "addressLocality": "Itajaí",
+      "addressRegion": "SC",
+      "postalCode": "88301-001",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/michelschmidt-dev",
+      "https://github.com/tieasychef",
+      "https://trailblazer.me/id/michelschmidt"
+    ],
+    "knowsAbout": ["Salesforce", "Apex", "Lightning Web Components", "Integração de sistemas", "MuleSoft", "JavaScript"]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,29 +105,37 @@
         <span class="blob blob--1"></span>
         <span class="blob blob--2"></span>
         <span class="blob blob--3"></span>
+        <span class="hero__grid"></span>
         <canvas id="particles" class="hero__particles"></canvas>
+      </div>
+
+      <div class="hero__floaters" aria-hidden="true">
+        <span class="floater floater--1">☁ Salesforce</span>
+        <span class="floater floater--2">🔗 Integrações</span>
+        <span class="floater floater--3">⚙ Automação</span>
+        <span class="floater floater--4">20+ anos</span>
       </div>
 
       <div class="container hero__content">
         <p class="hero__eyebrow reveal">Desenvolvedor Sênior · Salesforce · Integrações</p>
-        <h1 class="hero__title reveal">
+        <h1 class="hero__title reveal d1">
           Transformo processos complexos em
           <span class="hero__typed-wrap"><span id="typed" class="accent-grad"></span><span class="hero__cursor">|</span></span>
         </h1>
-        <p class="hero__subtitle reveal">
+        <p class="hero__subtitle reveal d2">
           Sou o Michel — mais de 20 anos ajudando empresas a alcançar seus objetivos com
           soluções sob medida, mais eficiência e menos custo. Especialista em Salesforce,
           integrações e aplicativos.
         </p>
 
-        <div class="hero__cta reveal">
+        <div class="hero__cta reveal d3">
           <a href="#projetos" class="btn btn--primary">Ver projetos</a>
           <a href="#contato" class="btn btn--ghost">Vamos conversar</a>
         </div>
 
-        <div class="hero__meta reveal">
+        <div class="hero__meta reveal d4">
           <span class="hero__meta-item">📍 Itajaí, Santa Catarina</span>
-          <span class="hero__meta-item">✉ Disponível para novos projetos</span>
+          <span class="hero__meta-item hero__meta-item--live"><span class="hero__meta-dot"></span> Disponível para novos projetos</span>
         </div>
       </div>
 
@@ -238,7 +292,13 @@
           <p class="section__lead">Conte rapidamente o desafio e eu retorno com uma proposta de como podemos avançar.</p>
 
           <ul class="contact__list">
-            <li><span class="contact__icon">📍</span> Itajaí, Santa Catarina — Brasil</li>
+            <li>
+              <span class="contact__icon">📍</span>
+              <span>
+                Rua Hercílio Luz, 660 — Centro, Itajaí — SC, 88301-001
+                <a class="contact__map-link" href="https://www.google.com/maps/search/?api=1&query=Rua+Herc%C3%ADlio+Luz+660+Centro+Itaja%C3%AD+SC" target="_blank" rel="noopener">Ver no mapa →</a>
+              </span>
+            </li>
             <li><span class="contact__icon">📱</span> +55 54 99134-7184</li>
             <li><span class="contact__icon">✉</span> <span data-email-user="contato" data-email-domain="michelschmidt.dev">contato&#64;michelschmidt.dev</span></li>
           </ul>
@@ -270,24 +330,68 @@
           <button type="submit" class="btn btn--whatsapp btn--block">Enviar pelo WhatsApp</button>
           <p class="contact__form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
+
+        <div class="contact__map reveal">
+          <iframe
+            title="Localização — Rua Hercílio Luz, 660, Centro, Itajaí - SC"
+            src="https://www.google.com/maps?q=Rua+Herc%C3%ADlio+Luz+660+Centro+Itaja%C3%AD+SC&output=embed"
+            width="100%" height="320" style="border:0" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- ============ RODAPÉ ============ -->
   <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="nav__logo-text">Michel<span class="accent">.</span></span>
-        <p>Desenvolvedor sênior · Salesforce, integrações e aplicativos · Itajaí/SC</p>
+    <div class="container footer__grid">
+      <div class="footer__col footer__brand">
+        <a href="#hero" class="nav__logo-text footer__logo">Michel<span class="accent">.</span></a>
+        <p>Desenvolvedor sênior especialista em Salesforce, integrações de sistemas e aplicativos sob medida. Mais de 20 anos transformando processos complexos em resultado real.</p>
+        <nav class="footer__social" aria-label="Redes sociais">
+          <!-- Sugestão de perfis — troque pelos seus reais quando disponíveis -->
+          <a href="https://www.linkedin.com/in/michelschmidt-dev" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="https://github.com/tieasychef" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
+          </a>
+          <a href="https://trailblazer.me/id/michelschmidt" target="_blank" rel="noopener" aria-label="Trailhead" title="Trailhead">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2 2 7v10l10 5 10-5V7L12 2zm0 2.2 7.8 3.9-7.8 3.9-7.8-3.9L12 4.2zM4.2 9.1l6.8 3.4v7.3l-6.8-3.4V9.1zm8.8 10.7v-7.3l6.8-3.4v7.3l-6.8 3.4z"/></svg>
+          </a>
+        </nav>
       </div>
-      <nav class="footer__social" aria-label="Redes sociais">
-        <!-- Edite os links abaixo com seus perfis reais -->
-        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="#" target="_blank" rel="noopener">GitHub</a>
-        <a href="#" target="_blank" rel="noopener">Trailhead</a>
-      </nav>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Navegação</h3>
+        <ul class="footer__links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Contato</h3>
+        <ul class="footer__contact">
+          <li>
+            <span class="contact__icon">📍</span>
+            <span>
+              Rua Hercílio Luz, 660 — Centro<br />Itajaí — SC, 88301-001
+              <a class="contact__map-link" href="https://www.google.com/maps/search/?api=1&query=Rua+Herc%C3%ADlio+Luz+660+Centro+Itaja%C3%AD+SC" target="_blank" rel="noopener">Ver no mapa →</a>
+            </span>
+          </li>
+          <li><span class="contact__icon">📱</span> <a href="https://wa.me/5554991347184" target="_blank" rel="noopener">+55 54 99134-7184</a></li>
+          <li><span class="contact__icon">✉</span> <span data-email-user="contato" data-email-domain="michelschmidt.dev">contato&#64;michelschmidt.dev</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
       <p class="footer__copy">© <span id="year"></span> Michel Schmidt. Todos os direitos reservados.</p>
+      <a href="#hero" class="footer__top" aria-label="Voltar ao topo">↑ Voltar ao topo</a>
     </div>
   </footer>
 

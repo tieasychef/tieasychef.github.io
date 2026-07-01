@@ -1,0 +1,34 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+
+# Dependências (caso adicione build tooling no futuro)
+node_modules/
+
+# Build / deploy
+.vercel/
+dist/
+build/
+
+# Logs e arquivos temporários
+*.log
+npm-debug.log*
+*.tmp
+*.bak
+*~
+
+# Arquivos de foto/asset pessoal de exemplo (evita subir originais pesados sem querer)
+assets/*.psd
+assets/*.ai

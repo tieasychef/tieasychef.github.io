@@ -16,7 +16,31 @@ window.AnimModule = {
     this.setupObserver();
     this.observe(document.querySelectorAll(".reveal"));
     this.typeEffect();
-    if (!this.reduced) this.particles();
+    if (!this.reduced) {
+      this.particles();
+      this.heroParallax();
+    }
+  },
+
+  /* ---- Parallax sutil no hero, seguindo o mouse ---- */
+  heroParallax() {
+    const hero = document.getElementById("hero");
+    const bg = hero?.querySelector(".hero__bg");
+    const content = hero?.querySelector(".hero__content");
+    if (!hero || !bg) return;
+
+    hero.addEventListener("pointermove", (e) => {
+      const rect = hero.getBoundingClientRect();
+      const px = (e.clientX - rect.left) / rect.width - 0.5;
+      const py = (e.clientY - rect.top) / rect.height - 0.5;
+      bg.style.transform = `translate(${px * -26}px, ${py * -26}px)`;
+      if (content) content.style.transform = `translate(${px * 8}px, ${py * 6}px)`;
+    });
+
+    hero.addEventListener("pointerleave", () => {
+      bg.style.transform = "";
+      if (content) content.style.transform = "";
+    });
   },
 
   /* ---- Reveal + gatilhos (contadores, barras) ---- */
