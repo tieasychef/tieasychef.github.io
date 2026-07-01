@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michel Schmidt — Desenvolvedor Sênior Salesforce & Integrações</title>
+  <meta name="description" content="Michel Schmidt — Desenvolvedor sênior especialista em Salesforce, integrações e aplicativos. Mais de 20 anos ajudando empresas a alcançar seus objetivos com mais eficiência, menos tempo e menos custo. Itajaí, Santa Catarina." />
+  <meta name="author" content="Michel Schmidt" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Michel Schmidt — Desenvolvedor Sênior Salesforce & Integrações" />
+  <meta property="og:description" content="20+ anos em análise e desenvolvimento. Consultoria em Salesforce, integrações e aplicativos sob medida." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ BARRA DE PROGRESSO DE SCROLL ============ -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============ NAVEGAÇÃO ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Ir para o topo">
+        <span class="nav__logo-mark">M</span>
+        <span class="nav__logo-text">Michel<span class="accent">.</span></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegação principal">
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projetos" class="nav__link">Projetos</a>
+        <a href="#experiencia" class="nav__link">Experiência</a>
+        <a href="#servicos" class="nav__link">Serviços</a>
+        <a href="#contato" class="nav__link nav__link--cta">Contato</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <span class="theme-toggle__icon theme-toggle__icon--sun">☀</span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon">☾</span>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+        <canvas id="particles" class="hero__particles"></canvas>
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal">Desenvolvedor Sênior · Salesforce · Integrações</p>
+        <h1 class="hero__title reveal">
+          Transformo processos complexos em
+          <span class="hero__typed-wrap"><span id="typed" class="accent-grad"></span><span class="hero__cursor">|</span></span>
+        </h1>
+        <p class="hero__subtitle reveal">
+          Sou o Michel — mais de 20 anos ajudando empresas a alcançar seus objetivos com
+          soluções sob medida, mais eficiência e menos custo. Especialista em Salesforce,
+          integrações e aplicativos.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+          <a href="#contato" class="btn btn--ghost">Vamos conversar</a>
+        </div>
+
+        <div class="hero__meta reveal">
+          <span class="hero__meta-item">📍 Itajaí, Santa Catarina</span>
+          <span class="hero__meta-item">✉ Disponível para novos projetos</span>
+        </div>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">
+        <span class="hero__scroll-mouse"></span>
+      </a>
+    </section>
+
+    <!-- ============ CONTADORES ============ -->
+    <section class="stats" aria-label="Números">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <span class="stat__num" data-count="20" data-suffix="+">0</span>
+          <span class="stat__label">Anos de experiência</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="120" data-suffix="+">0</span>
+          <span class="stat__label">Projetos entregues</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="40" data-suffix="+">0</span>
+          <span class="stat__label">Empresas atendidas</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="15" data-suffix="+">0</span>
+          <span class="stat__label">Integrações críticas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section" id="sobre">
+      <div class="container about">
+        <div class="about__media reveal">
+          <div class="about__photo">
+            <!-- Troque por uma foto sua: coloque em assets/foto.jpg e substitua abaixo -->
+            <div class="about__photo-placeholder">MS</div>
+          </div>
+          <div class="about__badge">
+            <strong>Salesforce</strong>
+            <span>Especialista certificado</span>
+          </div>
+        </div>
+
+        <div class="about__text reveal">
+          <p class="section__eyebrow">Sobre mim</p>
+          <h2 class="section__title">Um parceiro técnico que pensa no negócio</h2>
+          <p>
+            Tenho 42 anos e mais de duas décadas dedicadas à análise e ao desenvolvimento de
+            sistemas. Nesse tempo aprendi que a melhor tecnologia é a que resolve o problema
+            certo — por isso trabalho lado a lado com meus clientes, entendendo o objetivo antes
+            de escrever a primeira linha de código.
+          </p>
+          <p>
+            Sou especialista em <strong>Salesforce</strong>, <strong>integrações entre sistemas</strong>
+            e <strong>desenvolvimento de aplicativos</strong>. Através da minha consultoria, ajudo
+            empresas a chegarem aos seus objetivos com mais aperfeiçoamento, menos tempo e menos custo.
+            Gosto de flexibilidade, de código limpo e de entregas que geram resultado de verdade.
+          </p>
+
+          <ul class="about__list">
+            <li>Foco em resultado e ROI, não só em entregar tarefas</li>
+            <li>Comunicação clara com áreas técnicas e de negócio</li>
+            <li>Do diagnóstico à sustentação — acompanho o ciclo completo</li>
+          </ul>
+
+          <a href="#contato" class="btn btn--primary btn--sm">Trabalhe comigo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Competências</p>
+          <h2 class="section__title">Tecnologias que domino</h2>
+          <p class="section__lead">Uma stack ampla e flexível, construída ao longo de 20+ anos de projetos reais.</p>
+        </div>
+
+        <div class="skills__grid">
+          <article class="skill-card reveal">
+            <h3 class="skill-card__title">Salesforce</h3>
+            <div class="skill-bar" data-level="95"><span class="skill-bar__label">Apex &amp; LWC</span><div class="skill-bar__track"><i></i></div></div>
+            <div class="skill-bar" data-level="92"><span class="skill-bar__label">Flows &amp; Automação</span><div class="skill-bar__track"><i></i></div></div>
+            <div class="skill-bar" data-level="88"><span class="skill-bar__label">Sales / Service / Experience Cloud</span><div class="skill-bar__track"><i></i></div></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3 class="skill-card__title">Integrações</h3>
+            <div class="skill-bar" data-level="93"><span class="skill-bar__label">APIs REST / SOAP</span><div class="skill-bar__track"><i></i></div></div>
+            <div class="skill-bar" data-level="85"><span class="skill-bar__label">MuleSoft / Middleware</span><div class="skill-bar__track"><i></i></div></div>
+            <div class="skill-bar" data-level="90"><span class="skill-bar__label">OAuth / Webhooks</span><div class="skill-bar__track"><i></i></div></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3 class="skill-card__title">Desenvolvimento</h3>
+            <div class="skill-bar" data-level="90"><span class="skill-bar__label">JavaScript / Node.js</span><div class="skill-bar__track"><i></i></div></div>
+            <div class="skill-bar" data-level="87"><span class="skill-bar__label">SQL / Modelagem de dados</span><div class="skill-bar__track"><i></i></div></div>
+            <div class="skill-bar" data-level="85"><span class="skill-bar__label">Git &amp; DevOps</span><div class="skill-bar__track"><i></i></div></div>
+          </article>
+        </div>
+
+        <div class="tags reveal" id="skillTags"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Portfólio</p>
+          <h2 class="section__title">Projetos em destaque</h2>
+          <p class="section__lead">Alguns trabalhos que representam bem o tipo de resultado que entrego.</p>
+        </div>
+
+        <div class="projects__filters reveal" id="projectFilters"></div>
+        <div class="projects__grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIÊNCIA ============ -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Trajetória</p>
+          <h2 class="section__title">Mais de 20 anos de estrada</h2>
+          <p class="section__lead">Uma linha do tempo com os marcos que moldaram minha forma de trabalhar.</p>
+        </div>
+
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Consultoria</p>
+          <h2 class="section__title">Como posso ajudar sua empresa</h2>
+          <p class="section__lead">Serviços pensados para gerar eficiência, reduzir custo e acelerar objetivos.</p>
+        </div>
+
+        <div class="services__grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section section--alt" id="contato">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <p class="section__eyebrow">Contato</p>
+          <h2 class="section__title">Vamos tirar seu projeto do papel</h2>
+          <p class="section__lead">Conte rapidamente o desafio e eu retorno com uma proposta de como podemos avançar.</p>
+
+          <ul class="contact__list">
+            <li><span class="contact__icon">📍</span> Itajaí, Santa Catarina — Brasil</li>
+            <li><span class="contact__icon">📱</span> +55 54 99134-7184</li>
+            <li><span class="contact__icon">✉</span> <span data-email-user="contato" data-email-domain="michelschmidt.dev">contato&#64;michelschmidt.dev</span></li>
+          </ul>
+
+          <a class="btn btn--whatsapp btn--lg" id="whatsHero"
+             href="https://wa.me/5554991347184?text=Ol%C3%A1%20Michel!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+             target="_blank" rel="noopener">
+            <span class="btn__wa-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor"><path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2.1c2.2 1.2 4.8 1.9 7.5 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5C3.6 20.4 3 18.2 3 16 3 8.8 8.8 3 16 3s13 5.8 13 13-5.8 12.5-13 12.5zm7.2-9.4c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.6.2.2 2.5 3.8 6 5.3.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5z"/></svg>
+            </span>
+            Falar no WhatsApp agora
+          </a>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <p class="contact__form-note">Preencha e o WhatsApp abre com a mensagem pronta 👇</p>
+          <div class="field">
+            <label for="cname">Nome</label>
+            <input type="text" id="cname" name="cname" placeholder="Seu nome" required />
+          </div>
+          <div class="field">
+            <label for="company">Empresa <span class="opt">(opcional)</span></label>
+            <input type="text" id="company" name="company" placeholder="Nome da empresa" />
+          </div>
+          <div class="field">
+            <label for="message">Como posso ajudar?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Descreva o desafio ou projeto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--whatsapp btn--block">Enviar pelo WhatsApp</button>
+          <p class="contact__form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-text">Michel<span class="accent">.</span></span>
+        <p>Desenvolvedor sênior · Salesforce, integrações e aplicativos · Itajaí/SC</p>
+      </div>
+      <nav class="footer__social" aria-label="Redes sociais">
+        <!-- Edite os links abaixo com seus perfis reais -->
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">Trailhead</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> Michel Schmidt. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ============ BOTÃO FLUTUANTE WHATSAPP ============ -->
+  <a class="whatsapp-float" id="whatsFloat"
+     href="https://wa.me/5554991347184?text=Ol%C3%A1%20Michel!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+     target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2.1c2.2 1.2 4.8 1.9 7.5 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5C3.6 20.4 3 18.2 3 16 3 8.8 8.8 3 16 3s13 5.8 13 13-5.8 12.5-13 12.5zm7.2-9.4c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.6.2.2 2.5 3.8 6 5.3.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5z"/></svg>
+    <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+  </a>
+
+  <!-- ============ SCRIPTS MODULARES ============ -->
+  <script src="js/data.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
